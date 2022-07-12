@@ -1,4 +1,11 @@
 .features {
+
+    &__cell:not(:last-child) {
+        @media screen and (max-width: ($width-container-tablet - 1px)) {
+            margin-bottom: $gap;
+        }
+    }  
+
     @include tablet() {
         @include grid(2);
     }
