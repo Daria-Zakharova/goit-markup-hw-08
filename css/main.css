@@ -588,7 +588,7 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding: 48px 40px;
+    padding: 48px 40px 60px;
     background-color: #ffffff;
   }
   .menu-button.is-open + .header__mobile-menu {
@@ -784,6 +784,12 @@ body {
 }
 .header-socials__item:not(:last-child) {
   border-right: 1px solid rgba(84, 84, 84, 0.2);
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 358px) {
+  .header-socials__item:nth-child(3) {
+    margin-bottom: 0;
+  }
 }
 .header-socials__link {
   display: block;
