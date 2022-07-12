@@ -1,0 +1,51 @@
+.header__mobile-menu {
+    @media screen and (max-width: ($width-container-tablet - 1px)) {
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100vw;
+        height: 100vh;
+
+        display: none;
+
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 48px 40px;
+            
+
+        background-color: getColor('bg');
+
+        .menu-button.is-open + & {   
+            display: flex;     
+        }
+    }
+
+    @include tablet() {
+        display: flex;
+        width: 100%;
+        align-items: center;
+    }
+}
+
+.menu-button {
+    @media screen and (max-width: ($width-container-tablet - 1px)) {
+        display: inline-block;
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        z-index: 2;
+
+        &__close,
+        &.is-open &__open {
+            display: none;
+        }
+
+        &.is-open &__close {
+            display: block;
+        }
+    }
+
+    display: none;
+}

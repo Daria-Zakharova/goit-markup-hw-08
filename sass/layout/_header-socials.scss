@@ -1,0 +1,22 @@
+.header-socials {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-left: -10px;
+
+    &__item:not(:last-child) {
+        border-right: 1px solid #54545433;
+    }
+
+    &__link {
+        display: block;
+        padding: 0 10px;
+
+        @include font-title(18px, 22px, .02em, 500);
+        color: getColor('accent');
+
+        
+    }
+        
+    
+}

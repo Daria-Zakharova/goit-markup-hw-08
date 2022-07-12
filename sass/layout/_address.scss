@@ -1,0 +1,11 @@
+.address {
+    font-style: normal;
+    @include font();
+
+    &__link {
+        display: inline-block;
+        margin-top: 9px;
+
+        color: #ffffff99;
+    }
+}

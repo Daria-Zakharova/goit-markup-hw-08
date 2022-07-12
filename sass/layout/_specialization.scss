@@ -1,0 +1,27 @@
+.specialization {
+    display: none;
+
+    @include desktop() {
+        display: block;
+        padding-top: 0;
+        @include grid(3);
+        
+            &__thumb {
+                position: relative;
+            }
+        
+            &__label {
+                position: absolute;
+                width: 100%;
+                bottom: 0;
+        
+                padding: 27px 15px;
+                text-align: center;
+                @include font-title($fs: 14px, $lh: 16px, $tt: uppercase);
+        
+                background-color: #2f303acc;
+                color: getColor('txt-secondary');
+        
+            }
+    }
+}

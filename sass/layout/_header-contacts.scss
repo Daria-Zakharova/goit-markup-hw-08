@@ -1,0 +1,75 @@
+.contacts {
+    
+    @media screen and (max-width: ($width-container-tablet - 1px)) {
+        display: flex;
+        margin-bottom: 64px;
+        flex-direction: column-reverse;
+        gap: 32px;
+    }
+
+    @include tablet() {
+        margin-left: auto;
+    }
+    
+    &__item:not(:last-child) {
+
+        @media screen and (min-width: $width-container-tablet) and (max-width: ($width-container-desktop - 1px)) {
+            margin-bottom: 10px;
+        }
+
+        @include desktop() {
+            margin-right: 50px;
+        } 
+    }  
+
+    
+
+    
+    &__link {
+        
+        @extend %centeredY;
+
+        @include font-title(24px, 28px, .02em, 500);
+        
+        @include transition(color);
+        
+        &:hover,
+        &:focus {
+            color: getColor('accent');
+        }
+
+        @media screen and (max-width: ($width-container-tablet - 1px)) {
+
+            &--accent {
+                color: getColor('accent');
+
+                @media screen and (min-width: 377px) {
+                    @include font-title(34px, 40px, null, null);
+                }                
+            }            
+        }
+
+        @media screen and (min-width: $width-container-tablet) and (max-width: ($width-container-desktop - 1px)) {
+            display: block;
+            @include font-title(12px, 14px, null, null);
+        }
+
+        
+        @include desktop() {
+            padding: 32px 0;
+            @include font-title(14px, 16px, null, null);
+        }
+
+        
+    }
+
+    &__icon {
+        display: none;
+
+        @include tablet {
+            display: inline;
+            margin-right: 10px;
+            fill: currentColor;
+        }
+    }
+}

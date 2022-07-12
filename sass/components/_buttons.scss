@@ -1,0 +1,33 @@
+.button {
+    border: none;
+    border-radius: $border-r;
+    background-color: transparent;
+
+    cursor: pointer;
+
+    font-family: inherit;
+}
+
+.button-standard {
+    min-width: 200px;
+        
+    padding: 10px;
+    
+    @include font-title(16px, 30px, .06em);
+    
+    box-shadow: 0px 4px 4px #00000026;
+    color: getColor('txt-secondary');
+    background-color: getColor('accent');
+
+    @include transition(background-color);
+
+    &--includes-icon {
+        @extend %centered;
+    }
+
+    &:hover,
+    &:focus {
+        background-color: getColor('button-hover');
+    }
+}
+

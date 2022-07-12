@@ -1,0 +1,75 @@
+@use 'sass:math';
+
+@mixin font($fs: 14px, $lh: 24px, $ls: .03em) {
+    line-height: calcLineHeight($fs, $lh);
+    font-size: $fs;
+    letter-spacing: $ls;
+}
+
+@mixin font-title($fs, $lh, $ls: .03em, $fw: 700, $tt: none) {
+
+    line-height: calcLineHeight($fs, $lh);
+    font-size: $fs;
+    letter-spacing: $ls;
+    font-weight: $fw;
+    text-transform: $tt;
+}
+
+@mixin transition($property) {
+    transition-property: $property;
+    transition-duration: $time-transition;
+    transition-timing-function: $cubic;
+}
+
+//mixins for @media
+
+@mixin mobile() {
+    @media screen and (min-width: $width-container-mobile) {
+        @content;
+    }
+}
+
+@mixin tablet() {
+    @media screen and (min-width: $width-container-tablet) {
+        @content;
+    }
+}
+
+@mixin desktop() {
+    @media screen and (min-width: $width-container-desktop) {
+        @content;
+    }
+}
+
+@mixin  retina() {
+    @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            @content;
+        }   
+}
+
+//mixins for flex layout
+
+@mixin row($rowGap) {
+    & {
+        display: flex;
+        gap: $rowGap;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@mixin grid($amount-in-row, $gridGap: $gap, $property: flex-basis) {
+    &__grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: $gridGap;
+    }
+
+    &__cell {
+        #{$property}: calc((100% - ($amount-in-row - 1)*$gridGap)/$amount-in-row);
+    }
+
+}

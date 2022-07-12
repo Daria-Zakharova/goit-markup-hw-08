@@ -1,0 +1,27 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    
+    color: getColor('txt');
+    background-color: getColor('bg');
+}
+
+//class for body when modal is opened
+
+.no-scroll {
+    margin-right: 17px;
+    overflow: hidden;
+}
+
+// space for fixed header and static header (when modal is opened)
+
+.content {
+    padding-top: 60px;
+
+    @include tablet() {
+        padding-top: 80px;
+    }
+}
+
+.no-scroll .content {
+    padding-top: 0;
+}

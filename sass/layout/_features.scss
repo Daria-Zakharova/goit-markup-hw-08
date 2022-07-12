@@ -1,0 +1,28 @@
+.features {
+    @include tablet() {
+        @include grid(2);
+    }
+
+    @include desktop() {
+        @include grid(4);
+    }
+
+    &__thumb {
+        margin-bottom: $gap;
+        padding: 25px 0;
+        @extend %centered;
+        
+        border-radius: $border-r;
+        background-color: getColor('bg-section');        
+    }
+
+    &__subtitle {
+        margin-bottom: 10px;
+
+        @include font-title(14px, 16px, $tt: uppercase);
+    }
+
+    &__txt {
+        @include font($lh:24px);
+    }
+}

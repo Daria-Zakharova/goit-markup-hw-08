@@ -1,0 +1,49 @@
+.header {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    background-color: getColor('bg');
+    border-bottom: 1px solid #ececec;
+
+    .no-scroll &{
+        position: static;
+    }
+
+    &__container{
+        @extend %centeredY;
+    }
+    
+    &__logo {
+        display: inline-block;
+
+        margin-right: 93px;
+        padding: 16px 0;
+
+        @include tablet() {
+            padding: 26px 0;
+        }
+
+        @include desktop() {
+            padding: 24px 0 25px;
+        }
+    }
+
+    &__nav {
+        @include tablet() {
+            & {
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+
+    
+    &__contacts {
+        @include desktop() {
+            display: flex;
+            align-items: center;
+        }
+    }
+    
+}
+

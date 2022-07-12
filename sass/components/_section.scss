@@ -1,0 +1,7 @@
+.section {
+    padding: $section-pad-mobile 0;
+
+    @include desktop() {
+        padding: $section-pad 0;
+    }
+}

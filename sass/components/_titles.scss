@@ -1,0 +1,33 @@
+.page-title {
+
+    @include font-title(26px, 42px, .06em, 900, uppercase);
+
+    color: getColor('txt-secondary');
+
+    @include desktop() {
+        @include font-title(44px, 60px, .06em, 900, uppercase);
+    }
+}
+
+.section__title {
+    margin-bottom: 30px;
+
+    text-align: center;
+
+    color: getColor('txt-title');
+
+    @include font-title(28px, 33px);
+
+    @include desktop() {
+        margin-bottom: 50px;
+
+        @include font-title(36px, 42px);
+    }
+}
+
+.subtitle {
+    font-weight: 700;
+    
+    color: getColor('txt-title');
+    
+}

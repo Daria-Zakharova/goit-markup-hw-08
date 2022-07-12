@@ -1,0 +1,14 @@
+.logo {
+    font-family: 'Raleway', sans-serif;
+    @include font-title(24px, 28px);
+
+    color: getColor('txt-title');
+
+    &--accent {
+        color: getColor('accent');
+    }
+
+    @include desktop() {
+        @include font-title(26px, 31px)
+    }
+}

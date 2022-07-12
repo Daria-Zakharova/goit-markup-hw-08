@@ -1,0 +1,34 @@
+.hero {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 200px 0;
+    text-align: center;
+
+    background-color: getColor('bg-footer');
+    background-image: $hero-overlay, url(../images/hero/hero-480.jpg);
+    background-size: cover;
+
+    @include retina() {
+        background-image: $hero-overlay, url(../images/hero/hero-480@2.jpg);
+    }
+
+    @include tablet() {
+        background-image: $hero-overlay, url(../images/hero/hero-768.jpg);
+        
+        @include retina() {
+            background-image: $hero-overlay, url(../images/hero/hero-768@2.jpg);
+        }
+    }
+
+    @include desktop() {
+        background-image: $hero-overlay, url(../images/hero/hero-1600.jpg);
+        
+        @include retina() {
+            background-image: $hero-overlay, url(../images/hero/hero-1600@2.jpg);
+        }
+    }
+
+    &__title {
+        margin-bottom: 30px;
+    }
+}

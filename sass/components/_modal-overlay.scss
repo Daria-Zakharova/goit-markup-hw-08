@@ -1,0 +1,15 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+
+    overflow-y: scroll;
+
+    @extend %centered;
+
+    background-color: #00000033;
+    transition: opacity $time-transition $cubic, visibility $time-transition $cubic;
+}
