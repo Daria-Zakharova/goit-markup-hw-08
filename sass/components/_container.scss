@@ -4,15 +4,15 @@
     padding: 0 15px;
 
     @include mobile() {
-        width: $width-mobile;
+        max-width: $width-mobile;
     }
 
 
     @include tablet() {
-        width: $width-tablet;
+        max-width: $width-tablet;
     }
 
     @include desktop() {
-        width: $width-desktop;
+        max-width: $width-desktop;
     }
 }
