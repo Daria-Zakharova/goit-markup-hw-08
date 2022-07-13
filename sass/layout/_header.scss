@@ -16,14 +16,16 @@
     &__logo {
         display: inline-block;
 
-        margin-right: 93px;
+        
         padding: 16px 0;
 
         @include tablet() {
+            margin-right: 88px;
             padding: 26px 0;
         }
 
         @include desktop() {
+            margin-right: 93px;
             padding: 24px 0 25px;
         }
     }
