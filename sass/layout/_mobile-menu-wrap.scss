@@ -1,5 +1,5 @@
 .header__mobile-menu {
-    @media screen and (max-width: ($width-container-tablet - 1px)) {
+    @media screen and (max-width: ($width-tablet - 1px)) {
 
         position: fixed;
         top: 0;
@@ -35,7 +35,7 @@
 }
 
 .menu-button {
-    @media screen and (max-width: ($width-container-tablet - 1px)) {
+    @media screen and (max-width: ($width-tablet - 1px)) {
         display: inline-block;
         position: fixed;
         top: 10px;

@@ -5,14 +5,14 @@
     color: getColor('txt-secondary');
     text-align: center;
 
-        @media screen and (max-width: ($width-container-tablet - 1px)) {
+        @media screen and (max-width: ($width-tablet - 1px)) {
             &__cell:not(:last-child) {
                 margin-bottom: 60px;
             }
             
         }
 
-        @media screen and (min-width: $width-container-tablet) and (max-width: ($width-container-desktop - 1px)) {
+        @media screen and (min-width: $width-tablet) and (max-width: ($width-desktop - 1px)) {
             @include grid(2, $section-pad-mobile);
         }
 

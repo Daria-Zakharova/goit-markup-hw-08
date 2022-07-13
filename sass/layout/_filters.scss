@@ -5,7 +5,7 @@
     
     @include row(8px);
 
-    @media screen and (max-width: ($width-container-tablet - 1px)) {
+    @media screen and (max-width: ($width-tablet - 1px)) {
         justify-content: start;
     }
 

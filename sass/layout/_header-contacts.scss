@@ -1,6 +1,6 @@
 .contacts {
     
-    @media screen and (max-width: ($width-container-tablet - 1px)) {
+    @media screen and (max-width: ($width-tablet - 1px)) {
         display: flex;
         margin-bottom: 64px;
         flex-direction: column-reverse;
@@ -13,7 +13,7 @@
     
     &__item:not(:last-child) {
 
-        @media screen and (min-width: $width-container-tablet) and (max-width: ($width-container-desktop - 1px)) {
+        @media screen and (min-width: $width-tablet) and (max-width: ($width-desktop - 1px)) {
             margin-bottom: 10px;
         }
 
@@ -38,7 +38,7 @@
             color: getColor('accent');
         }
 
-        @media screen and (max-width: ($width-container-tablet - 1px)) {
+        @media screen and (max-width: ($width-tablet - 1px)) {
 
             &--accent {
                 color: getColor('accent');
@@ -49,7 +49,7 @@
             }            
         }
 
-        @media screen and (min-width: $width-container-tablet) and (max-width: ($width-container-desktop - 1px)) {
+        @media screen and (min-width: $width-tablet) and (max-width: ($width-desktop - 1px)) {
             display: block;
             @include font-title(12px, 14px, null, null);
         }

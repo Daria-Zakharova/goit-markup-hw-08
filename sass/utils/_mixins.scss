@@ -24,19 +24,19 @@
 //mixins for @media
 
 @mixin mobile() {
-    @media screen and (min-width: $width-container-mobile) {
+    @media screen and (min-width: $width-mobile) {
         @content;
     }
 }
 
 @mixin tablet() {
-    @media screen and (min-width: $width-container-tablet) {
+    @media screen and (min-width: $width-tablet) {
         @content;
     }
 }
 
 @mixin desktop() {
-    @media screen and (min-width: $width-container-desktop) {
+    @media screen and (min-width: $width-desktop) {
         @content;
     }
 }

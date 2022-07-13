@@ -1,6 +1,6 @@
 .nav {
     
-    @media screen and (max-width: ($width-container-tablet - 1px)) {
+    @media screen and (max-width: ($width-tablet - 1px)) {
 
         margin-bottom: auto;
 
@@ -23,7 +23,7 @@
             
         color: getColor('txt-title');
 
-        @media screen and (max-width: ($width-container-tablet - 1px)) {
+        @media screen and (max-width: ($width-tablet - 1px)) {
             display: block;
             padding: 0;
             @include font-title(40px, 47px, .02em, 500);
