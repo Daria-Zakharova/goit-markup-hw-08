@@ -27,6 +27,10 @@
         margin-bottom: 10px;
 
         @include font-title(14px, 16px, $tt: uppercase);
+        
+        @media screen and (max-width: ($width-tablet - 1px)){
+            text-align: center;
+        }
     }
 
     &__txt {

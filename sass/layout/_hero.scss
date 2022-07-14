@@ -1,7 +1,7 @@
 .hero {
     max-width: 1600px;
     margin: 0 auto;
-    padding: 200px 0;
+    padding: 118px 0;
     text-align: center;
 
     background-color: getColor('bg-footer');
@@ -21,6 +21,8 @@
     }
 
     @include desktop() {
+        padding: 200px 0;
+        
         background-image: $hero-overlay, url(../images/hero/hero-1600.jpg);
         
         @include retina() {

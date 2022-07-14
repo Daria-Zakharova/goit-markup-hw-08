@@ -824,7 +824,7 @@ body {
 .hero {
   max-width: 1600px;
   margin: 0 auto;
-  padding: 200px 0;
+  padding: 118px 0;
   text-align: center;
   background-color: #2f303a;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero-480.jpg);
@@ -851,6 +851,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .hero {
+    padding: 200px 0;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero-1600.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-1600.jpg);
   }
@@ -941,6 +942,11 @@ body {
   letter-spacing: 0.03em;
   font-weight: 700;
   text-transform: uppercase;
+}
+@media screen and (max-width: 767px) {
+  .features__subtitle {
+    text-align: center;
+  }
 }
 .features__txt {
   line-height: 1.7143;
@@ -1206,7 +1212,7 @@ body {
 }
 
 .filters {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 .filters {
   display: -webkit-box;
@@ -1224,6 +1230,16 @@ body {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
+  }
+}
+@media screen and (min-width: 768px) {
+  .filters {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filters {
+    margin-bottom: 50px;
   }
 }
 .filters__button {

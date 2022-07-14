@@ -1,5 +1,5 @@
 .filters {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 
     @extend %centered;
     
@@ -7,6 +7,14 @@
 
     @media screen and (max-width: ($width-tablet - 1px)) {
         justify-content: start;
+    }
+
+    @include tablet() {
+        margin-bottom: 30px;
+    }
+
+    @include desktop() {
+        margin-bottom: 50px;
     }
 
     &__button {
