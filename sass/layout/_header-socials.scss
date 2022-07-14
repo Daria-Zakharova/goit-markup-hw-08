@@ -6,19 +6,15 @@
         display: flex;
         flex-wrap: wrap;
         
+        margin-bottom: -20px;
         margin-left: -10px;
 
         &__item {
+            margin-bottom: 20px;
 
             &:not(:last-child) {
                 border-right: 1px solid #54545433;
-                margin-bottom: 20px;
-            }
-
-            &:nth-child(3) {
-                @media screen and (max-width: 358px) {
-                    margin-bottom: 0;
-                }
+                
             }
         }
 
@@ -30,10 +26,4 @@
             color: getColor('accent');        
         }
     }
-    
-    
-
-    
-        
-    
 }
