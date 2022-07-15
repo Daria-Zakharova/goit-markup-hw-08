@@ -255,7 +255,7 @@ body {
 
 .modal {
   padding: 40px;
-  width: 528px;
+  width: 450px;
   min-height: 581px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -273,6 +273,11 @@ body {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
+}
 .backdrop.is-hidden .modal {
   -webkit-transform: scale(0.1);
           transform: scale(0.1);
@@ -280,12 +285,12 @@ body {
 
 .modal__title {
   margin-bottom: 12px;
+  color: #212121;
   line-height: 1.5;
   font-size: 20px;
   letter-spacing: 0.03em;
   font-weight: 700;
   text-transform: none;
-  color: #212121;
 }
 @media screen and (min-width: 1200px) {
   .modal__title {
